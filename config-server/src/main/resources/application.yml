@@ -1,0 +1,12 @@
+server:
+  port: 8888  # Port du serveur de configuration
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: file://C:/path/to/config-repo
+          # ou si vous utilisez GitHub
+          # uri: https://github.com/your-org/config-repo
+          search-paths: '{application}'
